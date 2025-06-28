@@ -219,7 +219,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Запуск
 if __name__ == '__main__':
-    app = ApplicationBuilder().token('7708870604:AAHpJ8uZXw_-OzZS3wJTpyK-h4dEM_4IOOA').build()
+    app = ApplicationBuilder().token('YOUR TOKEN').build()
     app.add_handler(CommandHandler('start', start))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     app.run_polling()
